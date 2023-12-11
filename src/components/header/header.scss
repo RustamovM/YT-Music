@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.form {
+  position: relative;
+}
+input {
+  outline: none;
+}
+input:active {
+  box-shadow: 0 0 10px rgb(113, 165, 243);
+}
+input:hover {
+  box-shadow: 0 0 10px rgb(113, 165, 243);
+}
+.img {
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
+@media only screen and (max-width: 375px) {
+  .hamburger,
+  input,
+  .box {
+    display: none;
+  }
+  .header {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 10px 16px;
+    position: absolute;
+  }
+  .img {
+    position: relative;
+    top: 0;
+    right: -90px;
+  }
+}
